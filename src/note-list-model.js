@@ -1,12 +1,15 @@
-function NoteList() {
+(function(exports) {
+  function NoteList() {
   this.notes = new Array();
-}
+  };
 
-NoteList.prototype.addNote = function(note) {
-  this.notes.push(note.text)
-}
+  NoteList.prototype.create = function(text) {
+  this.notes.push(new Note(text))
+  }
 
-NoteList.prototype.returnAllNotes = function() {
+  NoteList.prototype.all = function() {
   return this.list
-};
+  }
+  exports.NoteList = NoteList;
 
+})(this);
