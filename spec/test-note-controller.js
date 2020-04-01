@@ -9,7 +9,7 @@
     var noteList = new NoteList();
     noteList.create("Favourite drink: Seltzer")
     var noteController = new NoteController(noteList);
-    assert.isTrue(noteController.convertToHTML() === "<ul><li><div>Favourite drink: Seltzer</div></li></ul>")
+    assert.isTrue(noteController.convertToHTML() === "<ul><li><div>Favourite drink: Sel</div></li></ul>")
   }
   
   testNoteControllerCanBeInstantiated();
