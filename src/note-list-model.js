@@ -11,5 +11,4 @@
   return this.list
   }
   exports.NoteList = NoteList;
-
 })(this);
