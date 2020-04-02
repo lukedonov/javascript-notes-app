@@ -6,6 +6,7 @@
   function testNoteListAddsNoteToNoteList() {
     var noteList = new NoteList();
       noteList.create("hello");
+      assert.isTrue(noteList.notes[0].id === 0);
       assert.isTrue(noteList.notes[0].text === "hello");
   }
   testNoteListIsEmptyByDefault();
